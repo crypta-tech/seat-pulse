@@ -8,3 +8,5 @@ A module for [SeAT](https://github.com/eveseat/seat) that binds Laravel Pulse be
 See the SeAT Docs [here](https://eveseat.github.io/docs/community_packages/)
 
 
+## Usage
+Once installed, superusers will have access to Laravel Pulse from a link under the settings sidebar menu.
