@@ -9,4 +9,4 @@ See the SeAT Docs [here](https://eveseat.github.io/docs/community_packages/)
 
 
 ## Usage
-Once installed, superusers will have access to Laravel Pulse from a link under the settings sidebar menu.
+Once installed, superusers will have access to Laravel Pulse from a link under the Tools sidebar menu.
