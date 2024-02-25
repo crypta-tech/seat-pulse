@@ -17,6 +17,8 @@ class PulseServiceProvider extends AbstractSeatPlugin
     {
         // Want pulse only visible to superusers :)
         Gate::define('viewPulse', 'Seat\Web\Acl\Policies\GlobalPolicy@superuser');
+
+        $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'seat-pulse');
     }
 
     /**
