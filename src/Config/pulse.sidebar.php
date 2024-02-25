@@ -9,6 +9,7 @@
 		 'name'  => 'Pulse',
 		 'label' => 'Laravel Pulse',
 		 'icon'  => 'fas fa-wave-square',
-		 'route' => 'pulse'
+		 'route' => 'pulse',
+		 'permission' => 'viewPulse',
 	 ],
  ];

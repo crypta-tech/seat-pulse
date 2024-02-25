@@ -28,7 +28,7 @@ class PulseServiceProvider extends AbstractSeatPlugin
     {
         $this->mergeConfigFrom(
             __DIR__ . '/Config/pulse.sidebar.php',
-            'package.sidebar.tools.entries'
+            'package.sidebar.settings.entries'
         );
     }
 
