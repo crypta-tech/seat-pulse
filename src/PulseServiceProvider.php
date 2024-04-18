@@ -4,6 +4,7 @@ namespace CryptaTech\Seat\Pulse;
 
 use Seat\Services\AbstractSeatPlugin;
 use Illuminate\Support\Facades\Gate;
+use Laravel\Pulse\Facades\Pulse;
 
 
 class PulseServiceProvider extends AbstractSeatPlugin
@@ -19,6 +20,13 @@ class PulseServiceProvider extends AbstractSeatPlugin
         Gate::define('viewPulse', 'Seat\Web\Acl\Policies\GlobalPolicy@superuser');
 
         $this->loadTranslationsFrom(__DIR__ . '/resources/lang', 'seat-pulse');
+
+        // Setup users 
+        Pulse::user(fn ($user) => [
+            'name' => $user->name,
+            'extra' => '',
+            'avatar' => sprintf('https://images.evetech.net/characters/%d/portrait?size=64', $user->main_character_id),
+        ]);
     }
 
     /**
